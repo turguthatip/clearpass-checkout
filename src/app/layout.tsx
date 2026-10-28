@@ -17,6 +17,8 @@ export const metadata: Metadata = {
   title: "Clearpass Checkout",
   description:
     "A clean, responsive checkout experience — a portfolio project by Turgut Hatipoglu.",
+  // Portfolio demo — keep it out of search results.
+  robots: { index: false, follow: false, googleBot: { index: false, follow: false } },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
