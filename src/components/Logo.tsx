@@ -3,32 +3,31 @@ type LogoProps = {
   compact?: boolean;
 };
 
-export function LogoMark({ className = "size-7" }: { className?: string }) {
+/**
+ * Three forward chevrons — traffic passing through a proxy, fading in as it
+ * travels. Opacity steps keep it legible as a single shape at small sizes.
+ */
+export function LogoMark({ className = "h-6 w-auto" }: { className?: string }) {
   return (
-    <svg viewBox="0 0 32 32" className={className} aria-hidden="true">
-      <rect width="32" height="32" rx="8" fill="#F44862" />
-      <path
-        d="M21.5 9.2A8 8 0 1 0 21.5 22.8"
+    <svg viewBox="0 0 44 32" className={className} aria-hidden="true">
+      <g
         fill="none"
-        stroke="#fff"
-        strokeWidth="3.2"
-        strokeLinecap="round"
-      />
-      <path
-        d="M12.6 16.2l2.6 2.6 5.2-5.4"
-        fill="none"
-        stroke="#fff"
-        strokeWidth="2.6"
+        stroke="#F44862"
+        strokeWidth="6"
         strokeLinecap="round"
         strokeLinejoin="round"
-      />
+      >
+        <path d="M5 5l11 11L5 27" opacity="0.35" />
+        <path d="M17 5l11 11-11 11" opacity="0.65" />
+        <path d="M29 5l11 11-11 11" />
+      </g>
     </svg>
   );
 }
 
 export function Logo({ compact = false }: LogoProps) {
   return (
-    <span className="inline-flex items-center gap-2" aria-label="Clearpass">
+    <span className="inline-flex items-center gap-2.5" aria-label="Clearpass">
       <LogoMark />
       <span
         aria-hidden="true"
@@ -36,7 +35,7 @@ export function Logo({ compact = false }: LogoProps) {
           compact ? "hidden sm:inline" : ""
         }`}
       >
-        clear<span className="text-brand">pass</span>
+        clearpass
       </span>
     </span>
   );
