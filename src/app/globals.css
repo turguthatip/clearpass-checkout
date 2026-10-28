@@ -50,7 +50,6 @@
   /* Elevation */
   --shadow-card: 0 0 2px 0 rgb(145 158 171 / 0.2),
     0 12px 24px -4px rgb(145 158 171 / 0.12);
-  --shadow-primary: 0 8px 16px 0 rgb(120 86 255 / 0.24);
 }
 
 @layer base {

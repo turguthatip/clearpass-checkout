@@ -15,7 +15,7 @@ export function buttonClasses({
     "inline-flex items-center justify-center gap-2 rounded-lg font-bold transition-colors disabled:cursor-not-allowed disabled:opacity-50",
     size === "lg" ? "h-12 px-6 text-[15px] leading-[26px]" : "h-9 px-4 text-[13px] leading-[22px]",
     variant === "primary"
-      ? "bg-primary text-white shadow-primary hover:bg-primary-dark"
+      ? "bg-primary text-white hover:bg-primary-dark"
       : "border border-primary/50 text-primary hover:border-primary hover:bg-primary-light",
     fullWidth ? "w-full" : "",
   ].join(" ");
