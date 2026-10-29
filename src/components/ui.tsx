@@ -15,8 +15,8 @@ export function buttonClasses({
     "inline-flex items-center justify-center gap-2 rounded-lg font-bold transition-colors disabled:cursor-not-allowed disabled:opacity-50",
     size === "lg" ? "h-12 px-6 text-[15px] leading-[26px]" : "h-9 px-4 text-[13px] leading-[22px]",
     variant === "primary"
-      ? "bg-primary text-white hover:bg-primary-dark"
-      : "border border-primary/50 text-primary hover:border-primary hover:bg-primary-light",
+      ? "bg-button text-white hover:bg-button-dark"
+      : "border border-button/50 text-button hover:border-button hover:bg-button-light",
     fullWidth ? "w-full" : "",
   ].join(" ");
 }

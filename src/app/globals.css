@@ -7,6 +7,10 @@
   --color-primary-dark: #5f3ff0;
   --color-primary-light: #efeaff;
   --color-navy: #213548;
+  /* Buttons — 5.2:1 contrast with white text */
+  --color-button: #2563eb;
+  --color-button-dark: #1d4ed8;
+  --color-button-light: #eff6ff;
 
   /* Text */
   --color-ink: #212b36;
